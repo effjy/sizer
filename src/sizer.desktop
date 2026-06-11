@@ -1,0 +1,13 @@
+[Desktop Entry]
+Type=Application
+Version=1.0
+Name=Sizer
+GenericName=Disk Space Analyzer
+Comment=Report the files and folders taking the most space, with percentages and a diagram
+Exec=sizer
+Icon=sizer
+Terminal=false
+Categories=System;Utility;Filesystem;
+Keywords=disk;usage;space;size;analyzer;du;
+StartupNotify=true
+StartupWMClass=sizer

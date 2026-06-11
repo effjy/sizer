@@ -1,0 +1,52 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg xmlns="http://www.w3.org/2000/svg" width="256" height="256" viewBox="0 0 256 256">
+  <defs>
+    <linearGradient id="bg" x1="0" y1="0" x2="1" y2="1">
+      <stop offset="0" stop-color="#0a1018"/>
+      <stop offset="1" stop-color="#04060a"/>
+    </linearGradient>
+    <filter id="glow" x="-40%" y="-40%" width="180%" height="180%">
+      <feGaussianBlur stdDeviation="4" result="b"/>
+      <feMerge>
+        <feMergeNode in="b"/>
+        <feMergeNode in="SourceGraphic"/>
+      </feMerge>
+    </filter>
+  </defs>
+
+  <!-- rounded background with neon border -->
+  <rect x="8" y="8" width="240" height="240" rx="48" ry="48" fill="url(#bg)"/>
+  <rect x="10" y="10" width="236" height="236" rx="46" ry="46"
+        fill="none" stroke="#00e6f2" stroke-width="2" opacity="0.6"/>
+
+  <!-- faint cyber grid -->
+  <g stroke="#00e6f2" stroke-width="1" opacity="0.10">
+    <line x1="40" y1="20" x2="40" y2="236"/>
+    <line x1="88" y1="20" x2="88" y2="236"/>
+    <line x1="168" y1="20" x2="168" y2="236"/>
+    <line x1="216" y1="20" x2="216" y2="236"/>
+    <line x1="20" y1="64" x2="236" y2="64"/>
+    <line x1="20" y1="128" x2="236" y2="128"/>
+    <line x1="20" y1="192" x2="236" y2="192"/>
+  </g>
+
+  <!-- donut chart slices, centered at 128,118 r=78, neon palette -->
+  <g transform="translate(128,118)" filter="url(#glow)">
+    <path d="M0,0 L0,-78 A78,78 0 0,1 74.2,24.1 Z" fill="#00e6f2"/>
+    <path d="M0,0 L74.2,24.1 A78,78 0 0,1 -45.9,63.1 Z" fill="#ff2fa0"/>
+    <path d="M0,0 L-45.9,63.1 A78,78 0 0,1 -74.2,24.1 Z" fill="#73f259"/>
+    <path d="M0,0 L-74.2,24.1 A78,78 0 0,1 0,-78 Z" fill="#8c66ff"/>
+    <circle cx="0" cy="0" r="40" fill="#04060a"/>
+    <circle cx="0" cy="0" r="40" fill="none" stroke="#ff2fa0" stroke-width="2" opacity="0.7"/>
+  </g>
+
+  <!-- magnifier suggesting analysis -->
+  <g transform="translate(128,118)">
+    <line x1="44" y1="44" x2="78" y2="78" stroke="#d6f5ff" stroke-width="14" stroke-linecap="round"/>
+    <circle cx="0" cy="0" r="40" fill="none" stroke="#d6f5ff" stroke-width="6" opacity="0.9"/>
+  </g>
+
+  <!-- title text -->
+  <text x="128" y="227" font-family="monospace" font-size="32" font-weight="bold"
+        text-anchor="middle" fill="#00e6f2" filter="url(#glow)">SIZER</text>
+</svg>
