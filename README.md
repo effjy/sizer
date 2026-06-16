@@ -2,7 +2,7 @@
 
 <img src="sizer-256.png" alt="Sizer logo" width="160"/>
 
-<a href="https://github.com/effjy/REPO/"><img src="titles/sizer-v201-title.svg" height="44" alt="Sizer v2.0.1"></a>
+<a href="https://github.com/effjy/REPO/"><img src="titles/sizer-v201-title.svg" height="52" alt="Sizer v2.0.1"></a>
 
 **Disk Space Analyzer** — a GTK3 desktop application written in C that reports
 the files and folders taking the most space on your system, starting from the
